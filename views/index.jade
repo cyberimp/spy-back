@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  hr
+  form(name="login", action="login", method="post")
+      div.input
+          span.label your UID
+          input(type="text", name="uid")
+      div.actions
+          input(type="submit", value="check")
